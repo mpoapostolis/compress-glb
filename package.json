@@ -24,12 +24,6 @@
     "webgl",
     "three.js"
   ],
-  "bin": {
-    "compress-glb": "./compress.mjs"
-  },
-  "files": [
-    "compress.mjs"
-  ],
   "scripts": {
     "compress": "node compress.mjs"
   },

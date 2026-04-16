@@ -14,29 +14,25 @@ CLI tool to compress `.glb` 3D models using **Draco**, **meshoptimizer**, and **
 ## Install
 
 ```bash
-npm install -g compress-glb
-```
-
-Or use directly without installing:
-
-```bash
-npx compress-glb model.glb
+git clone https://github.com/mpoapostolis/compress-glb.git
+cd compress-glb
+npm install
 ```
 
 ## Usage
 
 ```bash
 # Single file (default: medium compression)
-compress-glb model.glb
+node compress.mjs model.glb
 
 # Custom output path
-compress-glb model.glb model-min.glb
+node compress.mjs model.glb model-min.glb
 
 # Choose compression level
-compress-glb model.glb --level high
+node compress.mjs model.glb --level high
 
 # Batch compress all GLBs in a folder
-compress-glb ./models/
+node compress.mjs ./models/
 ```
 
 ## Compression Levels
@@ -52,13 +48,13 @@ compress-glb ./models/
 
 ```bash
 # Lossless cleanup
-compress-glb character.glb --level low
+node compress.mjs character.glb --level low
 
 # Optimize for web
-compress-glb scene.glb scene.min.glb --level high
+node compress.mjs scene.glb scene.min.glb --level high
 
 # Compress everything in a directory
-compress-glb ./assets/models/ --level medium
+node compress.mjs ./assets/models/ --level medium
 ```
 
 Output files are saved as `<name>.min.glb` by default.
