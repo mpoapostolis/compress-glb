@@ -1,0 +1,44 @@
+{
+  "name": "compress-glb",
+  "version": "1.0.0",
+  "description": "CLI tool to compress .glb 3D models using Draco, meshoptimizer, and texture optimization",
+  "type": "module",
+  "license": "MIT",
+  "author": "Apostolis Mpostanis",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpoapostolis/compress-glb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mpoapostolis/compress-glb/issues"
+  },
+  "homepage": "https://github.com/mpoapostolis/compress-glb#readme",
+  "keywords": [
+    "glb",
+    "gltf",
+    "3d",
+    "compress",
+    "draco",
+    "meshopt",
+    "optimization",
+    "webgl",
+    "three.js"
+  ],
+  "bin": {
+    "compress-glb": "./compress.mjs"
+  },
+  "files": [
+    "compress.mjs"
+  ],
+  "scripts": {
+    "compress": "node compress.mjs"
+  },
+  "dependencies": {
+    "@gltf-transform/core": "^4.1.1",
+    "@gltf-transform/extensions": "^4.1.1",
+    "@gltf-transform/functions": "^4.1.1",
+    "draco3dgltf": "^1.5.7",
+    "meshoptimizer": "^0.22.0",
+    "sharp": "^0.33.5"
+  }
+}
