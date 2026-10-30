@@ -69,6 +69,8 @@ Built on top of [glTF Transform](https://gltf-transform.dev/) with:
 
 The pipeline applies transforms in order: dedup → prune → flatten → resample → weld → Draco → texture compress → simplify → quantize (depending on level).
 
+By the maker of [VXLVERSE](https://vxlverse.com), a 3D story-game maker in the browser.
+
 ## License
 
 [MIT](LICENSE)
